@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+  <main>
+    <div class="content">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <p><img src="./images/icon-list.svg" alt="icon-list"> Product discovery and building what matters</p>
+      <p><img src="./images/icon-list.svg" alt="icon-list"> Measuring to ensure updates are a success</p>
+      <p><img src="./images/icon-list.svg" alt="icon-list"> And much more!</p>
+      <div class="newsletter">
+        <div class="small">
+          <small>Email address</small>
+          <small class="red hidden error">Valid email required</small>
+        </div>
+        <input type="email" placeholder="email@company.com">
+        <button id="subscribe">Subscribe to monthly newsletter</button>
+      </div>
+    </div>
+    <picture>
+      <source media="(max-width: 720px)" srcset="./images/illustration-sign-up-mobile.svg">
+      <img src="./images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+    </picture>
+  </main>
+  <aside class="hidden">
+    <div class="thanks ">
+      <img src="./images/icon-success.svg" alt="icon-success">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <span>ash@loremcompany.com.</span> Please open it and click the button inside to confirm your subscription.</p>
+      <button id="dismiss">Dismiss Message</button>
+    </div>
+  </aside>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
